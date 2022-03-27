@@ -1,0 +1,54 @@
+#main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+.statik{
+    position: static;
+    background-color: blueviolet;
+}
+
+.relative1{
+    position: relative;
+    background-color: brown;
+}
+
+.relative2{
+    position: relative;
+    background-color: rgb(111, 201, 171);
+    top: -10px;
+    left: 30px;
+}
+.space {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.after-space{
+    background-color: blueviolet;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.relative3 {
+    max-width: 600px;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.absolute{
+    position: absolute;
+    right: 30px;
+    top:10px;
+    /* tetep kasi ukuran kotak ya */
+    width: 300px;
+    height: 20vh;
+    background-color: red;
+}
+.ruang{
+    height: 200vh;
+}
