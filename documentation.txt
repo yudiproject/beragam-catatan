@@ -1,0 +1,97 @@
+## How to do scrolling horizontal with mouse, using shift + scroll
+1. install xbindkeys
+    sudo apt install xbindkeys
+
+2. open or make file ~/.xvindkeysrc.scm
+    bind shift + vertical scroll to horizontal scroll events
+    (xbindkey '(shift "b:4) "xte 'mouseclick 6'")
+    (xbindkey '(shift "b:5 "xte 'mouseclick 7'")
+
+## How to publish your react pages to github
+1. first ensure that your minimal node is 16 and your minimal npm is 8.1.2, ensure too git is installed
+2. make your repository in github
+3. create your react app in your local, bonus typescript template
+    for javascript
+    npx create-react-app my-app
+    for type script
+    npx create-react-app my-app --template typescript
+4. using gh-pages as bridge between your react app pages to github
+    npm install gh-pages --save-dev
+5. edit your package.json file in my-app folder
+    note that + is to be added line
+    example: https://{username}.github.io/{repo-name}
+    {
+        "name": "my-app",
+        "version": "0.1.0",
+       +"homepage": "https://gitname.github.io/react-gh-pages",
+        "private": true
+    }
+6. add deployment scripts to package.json file
+    "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "start": "react-scripts start",
+        "build": "react-scripts build"
+        }
+
+    diatas untuk project site, klo user site
+    gh-pages -b master -d build
+
+7. add remote github to your local
+    git remote add origin https://github.com/{username}/{repo-name}.git
+    example
+    git remote add origin https://github.com/gitname/react-gh-pages.git
+
+8. deploy the react app to github pages
+    npm run deploy
+    and then that will cause predeploy and deploy scripts defined in package.json to run
+
+9. and thats it if you also want to include your source code then
+    git add .
+    git commit -m "konfigurasi react app untuk deployment ke halaman github"
+    git push origin master
+    
+    
+## how to check your react build locally
+1. npm run build
+2. install cli http-server 
+   npm i spa-http-server-g
+3. navigate to "build" folder
+4. http-server push-state
+5. open localhost:8080      
+
+untuk device lain bisa juga lihat
+jadi dia check ke
+http:192.168.X.X:8080
+
+cek dulu via laptop yang menghostingnya dia ip addressnya apa untuk mengisi X X nya
+    
+## how to check your linux ip address     
+hostname -I
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
