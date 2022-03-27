@@ -69,6 +69,9 @@ cek dulu via laptop yang menghostingnya dia ip addressnya apa untuk mengisi X X 
 ## how to check your linux ip address     
 hostname -I
     
+## how to join unrelated histories git
+--allow-unrelated-histories
+ex: git pull origin --allow-unrelated-histories
     
     
     
